@@ -1,0 +1,493 @@
+Train: 32 Test:10 Val:10
+
+original data:
+
+info db loss is 118.341362
+100%|██████████| 7/7 [06:52<00:00, 58.99s/it]
+ 14%|█▍        | 1/7 [01:06<06:36, 66.06s/it]info db loss is 31.559168
+100%|██████████| 7/7 [07:36<00:00, 65.19s/it]
+ 14%|█▍        | 1/7 [01:02<06:15, 62.63s/it]info db loss is 16.532301
+100%|██████████| 7/7 [07:21<00:00, 63.02s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:02<06:17, 62.92s/it]rec loss is 220.758804
+info db loss is 3.179822
+100%|██████████| 7/7 [07:28<00:00, 64.14s/it]
+10it [00:00, 117.77it/s]
+100%|██████████| 3/3 [00:37<00:00, 12.57s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0671), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:07<06:42, 67.02s/it]rec loss is 172.048065
+info db loss is 5.120078
+100%|██████████| 7/7 [07:55<00:00, 67.90s/it]
+10it [00:00, 154.00it/s]
+100%|██████████| 3/3 [00:32<00:00, 10.69s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0516), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:03<06:21, 63.65s/it]rec loss is 170.338791
+info db loss is 4.262734
+100%|██████████| 7/7 [07:27<00:00, 64.00s/it]
+10it [00:00, 154.01it/s]
+100%|██████████| 3/3 [00:30<00:00, 10.21s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0052), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+10it [00:00, 555.73it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.20s/it]
+{'recall@1': 0.0, 'recall@10': 0.03225806451612903, 'recall@50': 0.12903225806451613, 'loss': tensor(10.9294), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+10it [00:00, 263.40it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.20s/it]
+{'recall@1': 0.0, 'recall@10': 0.03225806451612903, 'recall@50': 0.12903225806451613, 'loss': tensor(10.9294), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+
+
+
+
+
+
+original from kbrd
+
+Entity max: 64368
+32it [00:00, 405.41it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+367874 46
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+ 14%|█▍        | 1/7 [00:46<04:40, 46.79s/it]info db loss is 122.822754
+100%|██████████| 7/7 [07:13<00:00, 61.95s/it]
+ 14%|█▍        | 1/7 [01:13<07:22, 73.81s/it]info db loss is 36.489315
+100%|██████████| 7/7 [08:29<00:00, 72.78s/it]
+ 14%|█▍        | 1/7 [01:11<07:08, 71.37s/it]info db loss is 14.986176
+100%|██████████| 7/7 [08:42<00:00, 74.58s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:15<07:34, 75.75s/it]rec loss is 222.594666
+info db loss is 2.487029
+100%|██████████| 7/7 [08:55<00:00, 76.50s/it]
+Entity max: 64368
+10it [00:00, 117.79it/s]
+100%|██████████| 3/3 [00:32<00:00, 10.98s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.02857142857142857, 'loss': tensor(11.1117), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:11<07:11, 71.84s/it]rec loss is 172.929657
+info db loss is 5.119308
+100%|██████████| 7/7 [08:27<00:00, 72.52s/it]
+Entity max: 64368
+10it [00:00, 222.45it/s]
+100%|██████████| 3/3 [00:30<00:00, 10.27s/it]
+{'recall@1': 0.0, 'recall@10': 0.02857142857142857, 'recall@50': 0.05714285714285714, 'loss': tensor(11.0992), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:06<06:37, 66.27s/it]rec loss is 171.200424
+info db loss is 4.546847
+100%|██████████| 7/7 [08:06<00:00, 69.51s/it]
+Entity max: 64368
+10it [00:00, 204.29it/s]
+100%|██████████| 3/3 [00:31<00:00, 10.39s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.05714285714285714, 'loss': tensor(11.0641), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+Entity max: 64368
+10it [00:00, 526.86it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.19s/it]
+{'recall@1': 0.03225806451612903, 'recall@10': 0.03225806451612903, 'recall@50': 0.1935483870967742, 'loss': tensor(10.9853), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 64368
+10it [00:00, 455.13it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.48s/it]
+{'recall@1': 0.03225806451612903, 'recall@10': 0.03225806451612903, 'recall@50': 0.1935483870967742, 'loss': tensor(10.9853), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+0 0 with kg
+
+Entity max: 67155
+32it [00:00, 421.49it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+384490 48
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+info db loss is 134.529968
+100%|██████████| 7/7 [07:11<00:00, 61.68s/it]
+ 14%|█▍        | 1/7 [01:12<07:15, 72.59s/it]info db loss is 36.222919
+100%|██████████| 7/7 [08:24<00:00, 72.06s/it]
+ 14%|█▍        | 1/7 [01:12<07:13, 72.32s/it]info db loss is 14.982459
+100%|██████████| 7/7 [08:28<00:00, 72.69s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:13<07:23, 73.88s/it]rec loss is 222.320831
+info db loss is 3.300884
+100%|██████████| 7/7 [08:25<00:00, 72.19s/it]
+Entity max: 67155
+10it [00:00, 161.46it/s]
+100%|██████████| 3/3 [00:30<00:00, 10.26s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.1078), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:10<07:00, 70.16s/it]rec loss is 176.159393
+info db loss is 4.773716
+100%|██████████| 7/7 [08:23<00:00, 71.94s/it]
+Entity max: 67155
+10it [00:00, 182.01it/s]
+100%|██████████| 3/3 [00:31<00:00, 10.53s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0930), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:11<07:07, 71.33s/it]rec loss is 174.675171
+info db loss is 4.085025
+100%|██████████| 7/7 [08:32<00:00, 73.24s/it]
+Entity max: 67155
+10it [00:00, 217.62it/s]
+100%|██████████| 3/3 [00:31<00:00, 10.47s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0475), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+Entity max: 67155
+10it [00:00, 526.83it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.18s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.03333333333333333, 'loss': tensor(10.9894), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67155
+10it [00:00, 400.76it/s]
+100%|██████████| 2/2 [00:19<00:00,  9.64s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.03333333333333333, 'loss': tensor(10.9894), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+Process finished with exit code 0
+
+
+10 10 with kg
+
+Entity max: 67240
+32it [00:00, 409.58it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+384562 47
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+ 14%|█▍        | 1/7 [00:57<05:43, 57.24s/it]info db loss is 133.703766
+100%|██████████| 7/7 [08:12<00:00, 70.29s/it]
+ 14%|█▍        | 1/7 [01:14<07:28, 74.75s/it]info db loss is 36.675179
+100%|██████████| 7/7 [08:31<00:00, 73.14s/it]
+ 14%|█▍        | 1/7 [01:14<07:29, 74.95s/it]info db loss is 11.679557
+100%|██████████| 7/7 [08:34<00:00, 73.54s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:14<07:28, 74.71s/it]rec loss is 222.809265
+info db loss is 3.271826
+100%|██████████| 7/7 [08:41<00:00, 74.53s/it]
+Entity max: 67240
+10it [00:00, 128.01it/s]
+100%|██████████| 3/3 [00:34<00:00, 11.51s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.1000), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:14<07:28, 74.70s/it]rec loss is 177.685562
+info db loss is 5.254334
+100%|██████████| 7/7 [08:44<00:00, 74.87s/it]
+Entity max: 67240
+10it [00:00, 49.23it/s]
+100%|██████████| 3/3 [00:32<00:00, 10.97s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.02857142857142857, 'loss': tensor(11.0862), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:12<07:14, 72.38s/it]rec loss is 175.927200
+info db loss is 5.053955
+100%|██████████| 7/7 [08:38<00:00, 74.13s/it]
+Entity max: 67240
+10it [00:00, 128.01it/s]
+100%|██████████| 3/3 [00:33<00:00, 11.32s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.02857142857142857, 'loss': tensor(11.0478), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+Entity max: 67240
+10it [00:00, 320.03it/s]
+100%|██████████| 2/2 [00:18<00:00,  9.41s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.16666666666666666, 'loss': tensor(10.9538), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67240
+10it [00:00, 640.11it/s]
+100%|██████████| 2/2 [00:19<00:00,  9.88s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.16666666666666666, 'loss': tensor(10.9538), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+Process finished with exit code 0
+
+
+
+
+
+{'max_c_length': 256, 'max_r_length': 30, 'batch_size': 32, 'max_count': 5, 'use_cuda': False, 'load_dict': None, 'learningrate': 0.001, 'optimizer': 'adam', 'momentum': 0, 'is_finetune': False, 'embedding_type': 'random', 'epoch': 3, 'gpu': '0', 'gradient_clip': 0.1, 'embedding_size': 300, 'n_heads': 2, 'n_layers': 2, 'ffn_size': 300, 'dropout': 0.1, 'attention_dropout': 0.0, 'relu_dropout': 0.1, 'learn_positional_embeddings': False, 'embeddings_scale': True, 'n_entity': 67260, 'n_relation': 214, 'n_concept': 29308, 'n_con_relation': 48, 'dim': 128, 'n_hop': 2, 'kge_weight': 1, 'l2_weight': 2.5e-06, 'n_memory': 32, 'item_update_mode': '0,1', 'using_all_hops': True, 'num_bases': 8}
+Entity max: 67240
+32it [00:00, 409.62it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+384562 47
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+info db loss is 133.866852
+100%|██████████| 7/7 [07:52<00:00, 67.53s/it]
+ 14%|█▍        | 1/7 [01:17<07:47, 77.90s/it]info db loss is 36.804562
+100%|██████████| 7/7 [08:50<00:00, 75.83s/it]
+ 14%|█▍        | 1/7 [01:19<07:58, 79.74s/it]info db loss is 13.335410
+100%|██████████| 7/7 [09:04<00:00, 77.79s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:17<07:42, 77.08s/it]rec loss is 222.392883
+info db loss is 2.825889
+100%|██████████| 7/7 [09:26<00:00, 80.93s/it]
+Entity max: 67240
+10it [00:00, 145.94it/s]
+100%|██████████| 3/3 [00:36<00:00, 12.18s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.1110), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:21<08:10, 81.83s/it]rec loss is 177.662460
+info db loss is 5.789983
+100%|██████████| 7/7 [09:58<00:00, 85.49s/it]
+Entity max: 67240
+10it [00:00, 49.18it/s]
+100%|██████████| 3/3 [00:36<00:00, 12.11s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0999), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:24<08:27, 84.61s/it]rec loss is 175.897293
+info db loss is 5.221175
+100%|██████████| 7/7 [10:17<00:00, 88.27s/it]
+Entity max: 67240
+10it [00:00, 66.62it/s]
+100%|██████████| 3/3 [00:38<00:00, 12.71s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0713), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+Entity max: 67240
+10it [00:00, 446.00it/s]
+100%|██████████| 2/2 [00:23<00:00, 11.82s/it]
+{'recall@1': 0.0, 'recall@10': 0.03333333333333333, 'recall@50': 0.03333333333333333, 'loss': tensor(10.9939), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67240
+10it [00:00, 334.18it/s]
+100%|██████████| 2/2 [00:22<00:00, 11.36s/it]
+{'recall@1': 0.0, 'recall@10': 0.03333333333333333, 'recall@50': 0.03333333333333333, 'loss': tensor(10.9939), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+
+
+
+
+0 0 without kg
+
+{'max_c_length': 256, 'max_r_length': 30, 'batch_size': 32, 'max_count': 5, 'use_cuda': False, 'load_dict': None, 'learningrate': 0.001, 'optimizer': 'adam', 'momentum': 0, 'is_finetune': False, 'embedding_type': 'random', 'epoch': 3, 'gpu': '0', 'gradient_clip': 0.1, 'embedding_size': 300, 'n_heads': 2, 'n_layers': 2, 'ffn_size': 300, 'dropout': 0.1, 'attention_dropout': 0.0, 'relu_dropout': 0.1, 'learn_positional_embeddings': False, 'embeddings_scale': True, 'n_entity': 67260, 'n_relation': 214, 'n_concept': 29308, 'n_con_relation': 48, 'dim': 128, 'n_hop': 2, 'kge_weight': 1, 'l2_weight': 2.5e-06, 'n_memory': 32, 'item_update_mode': '0,1', 'using_all_hops': True, 'num_bases': 8}
+Entity max: 67110
+32it [00:00, 409.71it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+383674 47
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+info db loss is 133.701569
+100%|██████████| 7/7 [07:41<00:00, 65.94s/it]
+ 14%|█▍        | 1/7 [01:20<08:00, 80.16s/it]info db loss is 35.337227
+100%|██████████| 7/7 [09:21<00:00, 80.24s/it]
+ 14%|█▍        | 1/7 [01:20<08:01, 80.27s/it]info db loss is 14.969431
+100%|██████████| 7/7 [10:26<00:00, 89.50s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:39<09:56, 99.43s/it]rec loss is 233.236145
+info db loss is 2.871440
+100%|██████████| 7/7 [11:38<00:00, 99.85s/it] 
+Entity max: 67110
+10it [00:00, 137.00it/s]
+100%|██████████| 3/3 [00:48<00:00, 16.18s/it]
+{'recall@1': 0.0, 'recall@10': 0.027777777777777776, 'recall@50': 0.05555555555555555, 'loss': tensor(11.1012), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:37<09:47, 97.89s/it]rec loss is 182.302979
+info db loss is 5.246858
+100%|██████████| 7/7 [11:50<00:00, 101.48s/it]
+Entity max: 67110
+10it [00:00, 72.02it/s]
+100%|██████████| 3/3 [00:51<00:00, 17.31s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.027777777777777776, 'loss': tensor(11.0860), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67110
+10it [00:00, 356.48it/s]
+100%|██████████| 2/2 [00:28<00:00, 14.46s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.1935483870967742, 'loss': tensor(11.0574), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67110
+10it [00:00, 200.18it/s]
+100%|██████████| 2/2 [00:29<00:00, 14.86s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.1935483870967742, 'loss': tensor(11.0574), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+
+
+{'max_c_length': 256, 'max_r_length': 30, 'batch_size': 32, 'max_count': 5, 'use_cuda': False, 'load_dict': None, 'learningrate': 0.001, 'optimizer': 'adam', 'momentum': 0, 'is_finetune': False, 'embedding_type': 'random', 'epoch': 3, 'gpu': '0', 'gradient_clip': 0.1, 'embedding_size': 300, 'n_heads': 2, 'n_layers': 2, 'ffn_size': 300, 'dropout': 0.1, 'attention_dropout': 0.0, 'relu_dropout': 0.1, 'learn_positional_embeddings': False, 'embeddings_scale': True, 'n_entity': 67260, 'n_relation': 214, 'n_concept': 29308, 'n_con_relation': 48, 'dim': 128, 'n_hop': 2, 'kge_weight': 1, 'l2_weight': 2.5e-06, 'n_memory': 32, 'item_update_mode': '0,1', 'using_all_hops': True, 'num_bases': 8}
+Entity max: 67145
+32it [00:00, 512.04it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+384694 48
+  0%|          | 0/7 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+ 14%|█▍        | 1/7 [00:55<05:34, 55.67s/it]info db loss is 134.494049
+100%|██████████| 7/7 [07:58<00:00, 68.34s/it]
+ 14%|█▍        | 1/7 [01:27<08:42, 87.10s/it]info db loss is 34.515308
+100%|██████████| 7/7 [10:08<00:00, 86.93s/it]
+ 14%|█▍        | 1/7 [01:34<09:26, 94.44s/it]info db loss is 12.925253
+100%|██████████| 7/7 [11:08<00:00, 95.51s/it]
+masked loss pre-trained
+ 14%|█▍        | 1/7 [01:39<09:56, 99.46s/it]rec loss is 244.897919
+info db loss is 3.262176
+100%|██████████| 7/7 [11:14<00:00, 96.39s/it]
+Entity max: 67145
+10it [00:00, 128.34it/s]
+100%|██████████| 3/3 [00:40<00:00, 13.38s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.1275), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:45<10:35, 105.86s/it]rec loss is 185.563553
+info db loss is 4.609052
+100%|██████████| 7/7 [12:34<00:00, 107.84s/it]
+Entity max: 67145
+10it [00:00, 164.11it/s]
+100%|██████████| 3/3 [00:45<00:00, 15.08s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.02702702702702703, 'loss': tensor(11.1167), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+ 14%|█▍        | 1/7 [01:44<10:25, 104.23s/it]rec loss is 183.958740
+info db loss is 4.999330
+100%|██████████| 7/7 [12:00<00:00, 102.90s/it]
+Entity max: 67145
+10it [00:00, 154.01it/s]
+100%|██████████| 3/3 [00:41<00:00, 13.67s/it]
+{'recall@1': 0.0, 'recall@10': 0.0, 'recall@50': 0.0, 'loss': tensor(11.0871), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67145
+10it [00:00, 303.05it/s]
+100%|██████████| 2/2 [00:29<00:00, 14.56s/it]
+{'recall@1': 0.0, 'recall@10': 0.03225806451612903, 'recall@50': 0.03225806451612903, 'loss': tensor(10.9932), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 67145
+10it [00:00, 312.17it/s]
+100%|██████████| 2/2 [00:24<00:00, 12.41s/it]
+{'recall@1': 0.0, 'recall@10': 0.03225806451612903, 'recall@50': 0.03225806451612903, 'loss': tensor(10.9932), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{'max_c_length': 256, 'max_r_length': 30, 'batch_size': 32, 'max_count': 5, 'use_cuda': False, 'load_dict': None, 'learningrate': 0.001, 'optimizer': 'adam', 'momentum': 0, 'is_finetune': False, 'embedding_type': 'random', 'epoch': 3, 'gpu': '0', 'gradient_clip': 0.1, 'embedding_size': 300, 'n_heads': 2, 'n_layers': 2, 'ffn_size': 300, 'dropout': 0.1, 'attention_dropout': 0.0, 'relu_dropout': 0.1, 'learn_positional_embeddings': False, 'embeddings_scale': True, 'n_entity': 67260, 'n_relation': 214, 'n_concept': 29308, 'n_con_relation': 48, 'dim': 128, 'n_hop': 2, 'kge_weight': 1, 'l2_weight': 2.5e-06, 'n_memory': 32, 'item_update_mode': '0,1', 'using_all_hops': True, 'num_bases': 8}
+Entity max: 64368
+1000it [00:02, 426.02it/s]
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+368014 46
+  0%|          | 0/198 [00:00<?, ?it/s]C:/Users/laska/PycharmProjects/KGSF/run.py:161: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  ..\torch\csrc\utils\python_arg_parser.cpp:766.)
+  seed_set = entity[b].nonzero().view(-1).tolist()
+C:\Users\laska\PycharmProjects\KGSF\models\graph.py:137: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  attention = F.softmax(e)
+C:\Users\laska\PycharmProjects\KGSF\venv\lib\site-packages\torch\nn\functional.py:1625: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+  1%|          | 1/198 [00:57<3:09:16, 57.65s/it]info db loss is 122.681465
+ 26%|██▌       | 51/198 [1:04:18<2:59:35, 73.30s/it]info db loss is 8.548203
+ 51%|█████     | 101/198 [2:05:55<1:59:25, 73.87s/it]info db loss is 1.823275
+ 76%|███████▌  | 150/198 [3:08:04<1:00:57, 76.20s/it]info db loss is 1.687655
+100%|██████████| 198/198 [4:09:50<00:00, 75.71s/it]
+  0%|          | 0/198 [00:00<?, ?it/s]info db loss is 1.505240
+ 25%|██▌       | 50/198 [1:05:17<3:07:59, 76.21s/it]info db loss is 1.506170
+ 51%|█████     | 101/198 [2:13:58<2:29:23, 92.41s/it]info db loss is 1.523404
+ 76%|███████▋  | 151/198 [3:16:46<57:32, 73.45s/it]info db loss is 1.554998
+100%|██████████| 198/198 [4:14:44<00:00, 77.19s/it]
+  1%|          | 1/198 [01:15<4:08:49, 75.78s/it]info db loss is 1.518003
+ 26%|██▌       | 51/198 [1:01:37<2:54:27, 71.20s/it]info db loss is 1.494709
+ 51%|█████     | 101/198 [2:00:38<1:53:44, 70.36s/it]info db loss is 1.481634
+ 76%|███████▋  | 151/198 [2:59:00<54:29, 69.56s/it]info db loss is 1.489539
+100%|██████████| 198/198 [3:54:51<00:00, 71.17s/it]
+masked loss pre-trained
+  1%|          | 1/198 [01:10<3:52:53, 70.93s/it]rec loss is 222.081146
+info db loss is 1.096747
+ 25%|██▌       | 50/198 [1:00:03<2:58:53, 72.52s/it]rec loss is 168.666138
+info db loss is 29.114843
+ 51%|█████     | 100/198 [2:04:11<2:07:35, 78.12s/it]rec loss is 143.207108
+info db loss is 8.443938
+ 76%|███████▌  | 150/198 [3:10:06<1:00:05, 75.11s/it]rec loss is 135.838882
+info db loss is 18.498308
+100%|██████████| 198/198 [4:12:57<00:00, 76.65s/it]
+Entity max: 64368
+100it [00:00, 216.67it/s]
+100%|██████████| 21/21 [04:04<00:00, 11.64s/it]
+{'recall@1': 0.021538461538461538, 'recall@10': 0.07692307692307693, 'recall@50': 0.19384615384615383, 'loss': tensor(8.1138), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+  0%|          | 0/198 [00:00<?, ?it/s]rec loss is 127.873192
+info db loss is 13.598187
+ 25%|██▌       | 50/198 [1:06:35<3:46:42, 91.91s/it]rec loss is 109.364502
+info db loss is 12.549999
+ 51%|█████     | 100/198 [2:22:33<2:20:03, 85.75s/it]rec loss is 108.700592
+info db loss is 12.679146
+ 76%|███████▌  | 150/198 [3:33:27<1:07:24, 84.27s/it]rec loss is 114.773483
+info db loss is 44.059181
+100%|██████████| 198/198 [4:38:05<00:00, 84.27s/it]
+Entity max: 64368
+100it [00:00, 236.49it/s]
+100%|██████████| 21/21 [04:23<00:00, 12.54s/it]
+{'recall@1': 0.006153846153846154, 'recall@10': 0.08923076923076922, 'recall@50': 0.23076923076923078, 'loss': tensor(8.1652), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+  0%|          | 0/198 [00:00<?, ?it/s]rec loss is 111.298584
+info db loss is 44.090740
+ 25%|██▌       | 50/198 [1:09:39<3:18:48, 80.60s/it]rec loss is 96.452087
+info db loss is 16.761833
+ 51%|█████     | 100/198 [2:30:14<2:19:22, 85.33s/it]rec loss is 96.148018
+info db loss is 11.169883
+ 76%|███████▌  | 150/198 [3:39:22<1:03:52, 79.83s/it]rec loss is 100.573547
+info db loss is 10.656885
+100%|██████████| 198/198 [4:48:27<00:00, 87.41s/it]
+Entity max: 64368
+100it [00:00, 102.12it/s]
+100%|██████████| 21/21 [05:03<00:00, 14.45s/it]
+{'recall@1': 0.018461538461538463, 'recall@10': 0.11692307692307692, 'recall@50': 0.28615384615384615, 'loss': tensor(8.2191), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+recommendation model saved once------------------------------------------------
+Entity max: 64368
+150it [00:00, 259.49it/s]
+100%|██████████| 30/30 [07:19<00:00, 14.65s/it]
+{'recall@1': 0.04484304932735426, 'recall@10': 0.13004484304932734, 'recall@50': 0.2533632286995516, 'loss': tensor(8.1330), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
+Entity max: 64368
+150it [00:00, 247.63it/s]
+100%|██████████| 30/30 [06:40<00:00, 13.35s/it]
+{'recall@1': 0.04484304932735426, 'recall@10': 0.13004484304932734, 'recall@50': 0.2533632286995516, 'loss': tensor(8.1330), 'gate': 0.0, 'count': 1.0, 'gate_count': 0.0}
